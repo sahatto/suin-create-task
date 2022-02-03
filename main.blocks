@@ -1,1 +1,35 @@
-<xml xmlns="https://developers.google.com/blockly/xml"><block type="pxt-on-start" id="DdQLn1e.eD[BTJ/ufk|]" x="0" y="0"><statement name="HANDLER"><block type="gamesetbackgroundcolor" id="c)v+3~r=0I^vpOE@#J4#"><value name="color"><shadow type="colorindexpicker" id="$|evc=IC1^UjZ=lY2|Ei"><field name="index">7</field></shadow></value></block></statement></block></xml>
+<xml xmlns="https://developers.google.com/blockly/xml"><block type="pxt-on-start" id="DdQLn1e.eD[BTJ/ufk|]" x="0" y="0"><statement name="HANDLER"><block type="gamesetbackgroundcolor" id="c)v+3~r=0I^vpOE@#J4#"><value name="color"><shadow type="colorindexpicker" id="$|evc=IC1^UjZ=lY2|Ei"><field name="index">7</field></shadow></value><next><block type="game_dialog_set_frame" id="|*E@Deq_]I]}sPf=ya4{"><value name="frame"><shadow type="dialog_image_picker" id="QLLz2/I=Fks7WLYP[a+@"><field name="img">img`
+8888.....88....888....888...8888.
+867788..8768..86768..8678.887768.
+8767768.877788676768877788677678.
+87767768676778776778776786776778.
+.877876667767877677876778678778..
+.867786686766867676866766687768..
+..8666868867688686886768686668...
+.88866688888888888888888866688...
+8777768866666666666666668886688..
+86767768666666666666666688677778.
+.8776678666666666666666686776768.
+..87766866666666666666668766778..
+..8888886666666666666666866778...
+.86776886666666666666666888888...
+8677776866666666666666668867768..
+87666688666666666666666686777768.
+86777768666666666666666688666678.
+.8677688666666666666666686777768.
+..88888866666666666666668867768..
+..8776686666666666666666888888...
+.87766786666666666666666866778...
+8676776866666666666666668766778..
+87777688666666666666666686776768.
+.8866888666666666666666688677778.
+..88666888888888888888888666888..
+..8666868676886868867688686668...
+.867786667668676768667686687768..
+.877876877678776778767766678778..
+87767768767787767787767686776778.
+876776887778867676887778.8677678.
+867788.8768..86768..8678..887768.
+8888...888....888....88.....8888.
+.................................
+`</field><data>{"commentRefs":[],"fieldData":{"img":"QLLz2/I=Fks7WLYP[a+@"}}</data></shadow></value><next><block type="game_dialog_set_text_color" id="U2v6:y_#@J(JT(0mdmD)"><value name="color"><shadow type="colorindexpicker" id="9~zUZ9^uA/GpMVEoNr|y"><field name="index">1</field></shadow></value><next><block type="game_show_long_text" id="B=mBoS}(p8#ke=6.L2KW"><field name="layout">DialogLayout.Center</field><value name="str"><shadow type="text" id="!(HlDNbhp?Qy:Dr}=URg"><field name="TEXT">Hello! We are here to teach you about flowers from around the world! </field></shadow></value><next><block type="game_show_long_text" id="`=EP;,v|/YF/vg=eaOB9"><field name="layout">DialogLayout.Center</field><value name="str"><shadow type="text" id="jM2c50nQvQs#F/_IUc(|"><field name="TEXT">Please click a continent and color to learn more...</field></shadow></value></block></next></block></next></block></next></block></next></block></statement></block></xml>
