@@ -1,6 +1,3 @@
-function continentStepTwo (num: number) {
-	
-}
 // this function takes the user to the next step and shows them the choices and asks them for a number
 function continentChoice () {
     game.setDialogFrame(img`
@@ -56,19 +53,7 @@ function continentChoice () {
     game.showLongText("1:North America   2:South America   3:Africa", DialogLayout.Center)
     game.showLongText("4:Australia   5:Asia   6:Europe", DialogLayout.Center)
     game.splash(game.askForNumber("", 1))
-    northAmerica = 1
-    southAmerica = 2
-    africa = 3
-    australia = 4
-    asia = 5
-    europe = 6
 }
-let europe = 0
-let asia = 0
-let australia = 0
-let africa = 0
-let southAmerica = 0
-let northAmerica = 0
 scene.setBackgroundColor(7)
 game.setDialogFrame(img`
     8888.....88....888....88.88....888....888...8888
@@ -122,7 +107,7 @@ game.setDialogFrame(img`
     `)
 game.setDialogTextColor(1)
 // This text intros the user and tells them what the game will include
-game.showLongText("Hello! We are here to teach you about flowers from around the world! ", DialogLayout.Full)
+game.showLongText("Hello! We are here to teach you about flowers from around the world! ", DialogLayout.Center)
 // This long text is part two of the first text explaining what the game will be
-game.showLongText("Enter the corresponding number of the continent you want to learn about.", DialogLayout.Full)
+game.showLongText("Please enter the corresponding number to the continent you want to learn about", DialogLayout.Center)
 continentChoice()
