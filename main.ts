@@ -1,3 +1,6 @@
+function continentChoice () {
+	
+}
 scene.setBackgroundColor(7)
 game.setDialogFrame(img`
     8888.....88....888....888...8888.
@@ -35,5 +38,7 @@ game.setDialogFrame(img`
     .................................
     `)
 game.setDialogTextColor(1)
+// This text intros the user and tells them what the game will include
 game.showLongText("Hello! We are here to teach you about flowers from around the world! ", DialogLayout.Center)
+// This long text is part two of the first text explaining what the game will be
 game.showLongText("Please click a continent and color to learn more...", DialogLayout.Center)
