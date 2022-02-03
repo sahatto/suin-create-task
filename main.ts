@@ -53,7 +53,22 @@ function continentChoice () {
     game.showLongText("1:North America   2:South America   3:Africa", DialogLayout.Center)
     game.showLongText("4:Australia   5:Asia   6:Europe", DialogLayout.Center)
     game.splash(game.askForNumber("", 1))
+    northAmerica = 1
+    southAmerica = 2
+    africa = 3
+    australia = 4
+    asia = 5
+    europe = 6
+    if (true) {
+    	
+    }
 }
+let europe = 0
+let asia = 0
+let australia = 0
+let africa = 0
+let southAmerica = 0
+let northAmerica = 0
 scene.setBackgroundColor(7)
 game.setDialogFrame(img`
     8888.....88....888....88.88....888....888...8888
