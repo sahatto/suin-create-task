@@ -1,3 +1,6 @@
+function continentStepTwo (num: number) {
+	
+}
 // this function takes the user to the next step and shows them the choices and asks them for a number
 function continentChoice () {
     game.setDialogFrame(img`
@@ -59,9 +62,6 @@ function continentChoice () {
     australia = 4
     asia = 5
     europe = 6
-    if (true) {
-    	
-    }
 }
 let europe = 0
 let asia = 0
