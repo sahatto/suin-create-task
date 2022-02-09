@@ -1,5 +1,6 @@
 // this function takes the user to the next step and shows them the choices and asks them for a number
 function continentChoice () {
+    let index = 0
     game.setDialogFrame(img`
         8888.....88....888....88.88....888....888...8888
         867788..8768..86768..8678768..86768..8678.887768
@@ -52,8 +53,23 @@ function continentChoice () {
         `)
     game.showLongText("1:North America   2:South America   3:Africa", DialogLayout.Center)
     game.showLongText("4:Australia   5:Asia   6:Europe", DialogLayout.Center)
-    game.splash(game.askForNumber("", 1))
+    game.splash(game.askForString("", 12))
+    continentList = [
+    "north america",
+    "south america",
+    "africa",
+    "australia ",
+    "asia",
+    "europe"
+    ]
+    if (index == 0) {
+    	
+    }
+    for (let index2 = 0; index2 <= 4; index2++) {
+    	
+    }
 }
+let continentList: string[] = []
 scene.setBackgroundColor(7)
 game.setDialogFrame(img`
     8888.....88....888....88.88....888....888...8888
@@ -109,5 +125,5 @@ game.setDialogTextColor(1)
 // This text intros the user and tells them what the game will include
 game.showLongText("Hello! We are here to teach you about flowers from around the world! ", DialogLayout.Full)
 // This long text is part two of the first text explaining what the game will be
-game.showLongText("Please enter the corresponding number to the continent you want to learn about:", DialogLayout.Full)
+game.showLongText("Please enter the name of the continent you want to learn about:", DialogLayout.Full)
 continentChoice()
