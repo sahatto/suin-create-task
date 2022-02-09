@@ -1,3 +1,23 @@
+function asia () {
+	
+}
+function northAmerica () {
+    if (true) {
+    	
+    }
+}
+function australia () {
+	
+}
+function europe () {
+	
+}
+function southAmerica () {
+	
+}
+function africa () {
+	
+}
 // this function takes the user to the next step and shows them the choices and asks them for a number
 function continentChoice () {
     let index = 0
@@ -51,8 +71,7 @@ function continentChoice () {
         867788.8768..86768..8678768..86768..8678..887768
         8888...888....888....88.88....888....88.....8888
         `)
-    game.showLongText("1:North America   2:South America   3:Africa", DialogLayout.Center)
-    game.showLongText("4:Australia   5:Asia   6:Europe", DialogLayout.Center)
+    game.showLongText("North America, South America, Africa, Australia, Asia, or Europe", DialogLayout.Full)
     game.splash(game.askForString("", 12))
     continentList = [
     "north america",
@@ -63,10 +82,17 @@ function continentChoice () {
     "europe"
     ]
     if (index == 0) {
-    	
-    }
-    for (let index2 = 0; index2 <= 4; index2++) {
-    	
+        northAmerica()
+    } else if (index == 1) {
+        southAmerica()
+    } else if (index == 2) {
+        africa()
+    } else if (index == 3) {
+        australia()
+    } else if (index == 4) {
+        asia()
+    } else {
+        europe()
     }
 }
 let continentList: string[] = []
