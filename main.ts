@@ -2,6 +2,10 @@ function asia () {
 	
 }
 function northAmerica () {
+    let index2 = 0
+    game.showLongText("Enter the color flower you want to see!", DialogLayout.Full)
+    game.showLongText("Red, Orange, Yellow, Green, Blue, or Purple", DialogLayout.Full)
+    game.splash(game.askForString("", 7))
     colorList = [
     "red",
     "orange",
@@ -10,15 +14,15 @@ function northAmerica () {
     "blue",
     "purple"
     ]
-    if (index == 0) {
+    if (index2 == 0) {
         game.splash("Cardinal Flower")
-    } else if (index == 1) {
+    } else if (index2 == 1) {
         game.splash("Butterfly Weed")
-    } else if (index == 2) {
+    } else if (index2 == 2) {
         game.splash("Yellow Fritillart")
-    } else if (index == 3) {
+    } else if (index2 == 3) {
         game.splash("Virginia Sweetspire ")
-    } else if (index == 4) {
+    } else if (index2 == 4) {
         game.splash("Wild Lupine ")
     } else {
         game.splash("Eastern Purple Cornflower")
@@ -38,6 +42,7 @@ function africa () {
 }
 // this function takes the user to the next step and shows them the choices and asks them for a number
 function continentChoice () {
+    let index = 0
     game.setDialogFrame(img`
         8888.....88....888....88.88....888....888...8888
         867788..8768..86768..8678768..86768..8678.887768
@@ -113,7 +118,6 @@ function continentChoice () {
     }
 }
 let continentList: string[] = []
-let index = 0
 let colorList: string[] = []
 scene.setBackgroundColor(7)
 game.setDialogFrame(img`
