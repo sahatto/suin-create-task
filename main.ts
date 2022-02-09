@@ -107,7 +107,7 @@ game.setDialogFrame(img`
     `)
 game.setDialogTextColor(1)
 // This text intros the user and tells them what the game will include
-game.showLongText("Hello! We are here to teach you about flowers from around the world! ", DialogLayout.Center)
+game.showLongText("Hello! We are here to teach you about flowers from around the world! ", DialogLayout.Full)
 // This long text is part two of the first text explaining what the game will be
-game.showLongText("Please enter the corresponding number to the continent you want to learn about", DialogLayout.Center)
+game.showLongText("Please enter the corresponding number to the continent you want to learn about:", DialogLayout.Full)
 continentChoice()
