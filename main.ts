@@ -1,4 +1,5 @@
 function asia () {
+    game.showLongText("Enter the color flower you want to see!", DialogLayout.Full)
     game.showLongText("Red, Orange, Yellow, Green, Blue, or Purple", DialogLayout.Full)
     game.splash(game.askForString("", 7))
     colorList = [
