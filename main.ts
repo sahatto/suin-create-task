@@ -152,4 +152,10 @@ game.setDialogTextColor(1)
 game.showLongText("Hello! We are here to teach you about flowers from around the world! ", DialogLayout.Full)
 // This long text is part two of the first text explaining what the game will be
 game.showLongText("Please enter the name of the continent you want to learn about:", DialogLayout.Full)
-continentChoice()
+for (let index = 0; index < 36; index++) {
+    continentChoice()
+    // This text intros the user and tells them what the game will include
+    game.showLongText("Thank you for learning about different flowers from around the world! Press A to learn about a different flower!", DialogLayout.Full)
+}
+// This text intros the user and tells them what the game will include
+game.showLongText("You have learned about all 36 flowers! We hope you enjoyed learning about flowers form around the world!", DialogLayout.Full)
