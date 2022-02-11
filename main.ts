@@ -36,15 +36,15 @@ function northAmerica () {
     "blue",
     "purple"
     ]
-    if (index2 == list[0]) {
+    if (index2 == colorList[0]) {
         game.splash("Cardinal Flower")
-    } else if (index2 == list[1]) {
+    } else if (index2 == colorList[1]) {
         game.splash("Butterfly Weed")
-    } else if (index2 == list[2]) {
+    } else if (index2 == colorList[2]) {
         game.splash("Yellow Fritillart")
-    } else if (index2 == list[3]) {
+    } else if (index2 == colorList[3]) {
         game.splash("Virginia Sweetspire ")
-    } else if (index2 == list[4]) {
+    } else if (index2 == colorList[4]) {
         game.splash("Wild Lupine ")
     } else {
         game.splash("Eastern Purple Cornflower")
@@ -232,9 +232,9 @@ function continentChoice (list: any[]) {
 }
 let continentList: string[] = []
 let choice = ""
-let index2 = 0
+let index2 = ""
 let colorList: string[] = []
-let list: number[] = []
+let list: string[] = []
 scene.setBackgroundColor(7)
 game.setDialogFrame(img`
     8888.....88....888....88.88....888....888...8888
