@@ -2,8 +2,30 @@ function asia () {
 	
 }
 function northAmerica () {
-    if (true) {
-    	
+    let index2 = 0
+    game.showLongText("Enter the color flower you want to see!", DialogLayout.Full)
+    game.showLongText("Red, Orange, Yellow, Green, Blue, or Purple", DialogLayout.Full)
+    game.splash(game.askForString("", 7))
+    colorList = [
+    "red",
+    "orange",
+    "yellow",
+    "green",
+    "blue",
+    "purple"
+    ]
+    if (index2 == 0) {
+        game.splash("Cardinal Flower")
+    } else if (index2 == 1) {
+        game.splash("Butterfly Weed")
+    } else if (index2 == 2) {
+        game.splash("Yellow Fritillart")
+    } else if (index2 == 3) {
+        game.splash("Virginia Sweetspire ")
+    } else if (index2 == 4) {
+        game.splash("Wild Lupine ")
+    } else {
+        game.splash("Eastern Purple Cornflower")
     }
 }
 function australia () {
@@ -96,6 +118,7 @@ function continentChoice () {
     }
 }
 let continentList: string[] = []
+let colorList: string[] = []
 scene.setBackgroundColor(7)
 game.setDialogFrame(img`
     8888.....88....888....88.88....888....888...8888
