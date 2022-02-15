@@ -50,10 +50,10 @@ function northAmerica (list: any[]) {
         game.splash("Eastern Purple Cornflower")
     }
 }
-function australia () {
+function australia (list: any[]) {
     game.showLongText("Enter the color flower you want to see!", DialogLayout.Full)
     game.showLongText("Red, Orange, Yellow, Green, Blue, or Purple", DialogLayout.Full)
-    game.splash(game.askForString("", 7))
+    color = game.askForString("", 7)
     colorList = [
     "red",
     "orange",
@@ -62,15 +62,15 @@ function australia () {
     "blue",
     "purple"
     ]
-    if (index2 == list[0]) {
+    if (color == colorList[0]) {
         game.splash("Mountain Devil Lambertia")
-    } else if (index2 == list[1]) {
+    } else if (color == colorList[1]) {
         game.splash("Fire Wheel")
-    } else if (index2 == list[2]) {
+    } else if (color == colorList[2]) {
         game.splash("The Golden Wattle")
-    } else if (index2 == list[3]) {
+    } else if (color == colorList[3]) {
         game.splash("Regal Birdflower")
-    } else if (index2 == list[4]) {
+    } else if (color == colorList[4]) {
         game.splash("Blue Lechenaultia")
     } else {
         game.splash("Sturt's Nightshade")
@@ -128,10 +128,10 @@ function southAmerica (list: any[]) {
         game.splash("Jarcadana")
     }
 }
-function africa () {
+function africa (list: any[]) {
     game.showLongText("Enter the color flower you want to see!", DialogLayout.Full)
     game.showLongText("Red, Orange, Yellow, Green, Blue, or Purple", DialogLayout.Full)
-    game.splash(game.askForString("", 7))
+    color = game.askForString("", 7)
     colorList = [
     "red",
     "orange",
@@ -140,15 +140,15 @@ function africa () {
     "blue",
     "purple"
     ]
-    if (index2 == list[0]) {
+    if (color == colorList[0]) {
         game.splash("Cape Primrose")
-    } else if (index2 == list[1]) {
-        game.splash("Hantamberg orange African Daisy")
-    } else if (index2 == list[2]) {
+    } else if (color == colorList[1]) {
+        game.splash("Hantamberg Orange Daisy")
+    } else if (color == colorList[2]) {
         game.splash("Voltage Yellow")
-    } else if (index2 == list[3]) {
+    } else if (color == colorList[3]) {
         game.splash("Green and White African Violet")
-    } else if (index2 == list[4]) {
+    } else if (color == colorList[4]) {
         game.splash("Lily of the Nile")
     } else {
         game.splash("African Violet")
@@ -221,9 +221,9 @@ function continentChoice (list: any[]) {
     } else if (choice == continentList[1]) {
         southAmerica(list)
     } else if (choice == continentList[2]) {
-        africa()
+        africa(list)
     } else if (choice == continentList[3]) {
-        australia()
+        australia(list)
     } else if (choice == continentList[4]) {
         asia(list)
     } else {
@@ -232,7 +232,6 @@ function continentChoice (list: any[]) {
 }
 let continentList: string[] = []
 let choice = ""
-let index2 = 0
 let colorList: string[] = []
 let color = ""
 let list: number[] = []
