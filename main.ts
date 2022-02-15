@@ -20,8 +20,11 @@ function asia (list: any[]) {
         game.splash("Elephant Ears")
     } else if (color == colorList[4]) {
         game.splash("Azalea")
-    } else {
+    } else if (color == colorList[5]) {
         game.splash("Magnolia")
+    } else {
+        game.showLongText("Please enter a valid color... try again", DialogLayout.Full)
+        game.reset()
     }
 }
 function northAmerica (list: any[]) {
@@ -46,8 +49,11 @@ function northAmerica (list: any[]) {
         game.splash("Virginia Sweetspire ")
     } else if (color == colorList[4]) {
         game.splash("Wild Lupine ")
-    } else {
+    } else if (color == colorList[5]) {
         game.splash("Eastern Purple Cornflower")
+    } else {
+        game.showLongText("Please enter a valid color... try again", DialogLayout.Full)
+        game.reset()
     }
 }
 function australia (list: any[]) {
@@ -72,8 +78,11 @@ function australia (list: any[]) {
         game.splash("Regal Birdflower")
     } else if (color == colorList[4]) {
         game.splash("Blue Lechenaultia")
-    } else {
+    } else if (color == colorList[5]) {
         game.splash("Sturt's Nightshade")
+    } else {
+        game.showLongText("Please enter a valid color... try again", DialogLayout.Full)
+        game.reset()
     }
 }
 function europe (list: any[]) {
@@ -98,8 +107,11 @@ function europe (list: any[]) {
         game.splash("Shamrock")
     } else if (color == colorList[4]) {
         game.splash("Gentian")
-    } else {
+    } else if (color == colorList[5]) {
         game.splash("Iris")
+    } else {
+        game.showLongText("Please enter a valid color... try again", DialogLayout.Full)
+        game.reset()
     }
 }
 function southAmerica (list: any[]) {
@@ -124,8 +136,11 @@ function southAmerica (list: any[]) {
         game.splash("Guaimbe")
     } else if (color == colorList[4]) {
         game.splash("Blue Wild Plumbago")
-    } else {
+    } else if (color == colorList[5]) {
         game.splash("Jarcadana")
+    } else {
+        game.showLongText("Please enter a valid color... try again", DialogLayout.Full)
+        game.reset()
     }
 }
 function africa (list: any[]) {
@@ -150,8 +165,11 @@ function africa (list: any[]) {
         game.splash("Green and White African Violet")
     } else if (color == colorList[4]) {
         game.splash("Lily of the Nile")
-    } else {
+    } else if (color == colorList[5]) {
         game.splash("African Violet")
+    } else {
+        game.showLongText("Please enter a valid color... try again", DialogLayout.Full)
+        game.reset()
     }
 }
 // this function takes the user to the next step and shows them the choices and asks them for a number
@@ -226,8 +244,11 @@ function continentChoice (list: any[]) {
         australia(list)
     } else if (choice == continentList[4]) {
         asia(list)
-    } else {
+    } else if (choice == continentList[5]) {
         europe(list)
+    } else {
+        game.showLongText("Please enter a valid continent... try again", DialogLayout.Full)
+        game.reset()
     }
 }
 let continentList: string[] = []
