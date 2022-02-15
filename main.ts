@@ -209,10 +209,10 @@ function continentChoice (list: any[]) {
     game.showLongText("North America, South America, Africa, Australia, Asia, or Europe", DialogLayout.Full)
     choice = game.askForString("", 12)
     continentList = [
-    "north america",
-    "south america",
+    "northamerica",
+    "southamerica",
     "africa",
-    "australia ",
+    "australia",
     "asia",
     "europe"
     ]
