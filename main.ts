@@ -24,10 +24,10 @@ function asia () {
         game.splash("Magnolia")
     }
 }
-function northAmerica () {
+function northAmerica (list: any[]) {
     game.showLongText("Enter the color flower you want to see!", DialogLayout.Full)
     game.showLongText("Red, Orange, Yellow, Green, Blue, or Purple", DialogLayout.Full)
-    game.splash(game.askForString("", 7))
+    color = game.askForString("", 7)
     colorList = [
     "red",
     "orange",
@@ -36,15 +36,15 @@ function northAmerica () {
     "blue",
     "purple"
     ]
-    if (index2 == colorList[0]) {
+    if (color == colorList[0]) {
         game.splash("Cardinal Flower")
-    } else if (index2 == colorList[1]) {
+    } else if (color == colorList[1]) {
         game.splash("Butterfly Weed")
-    } else if (index2 == colorList[2]) {
+    } else if (color == colorList[2]) {
         game.splash("Yellow Fritillart")
-    } else if (index2 == colorList[3]) {
+    } else if (color == colorList[3]) {
         game.splash("Virginia Sweetspire ")
-    } else if (index2 == colorList[4]) {
+    } else if (color == colorList[4]) {
         game.splash("Wild Lupine ")
     } else {
         game.splash("Eastern Purple Cornflower")
@@ -217,7 +217,7 @@ function continentChoice (list: any[]) {
     "europe"
     ]
     if (choice == continentList[0]) {
-        northAmerica()
+        northAmerica(list)
     } else if (choice == continentList[1]) {
         southAmerica()
     } else if (choice == continentList[2]) {
@@ -232,9 +232,10 @@ function continentChoice (list: any[]) {
 }
 let continentList: string[] = []
 let choice = ""
-let index2 = ""
+let color = ""
+let index2 = 0
 let colorList: string[] = []
-let list: string[] = []
+let list: number[] = []
 scene.setBackgroundColor(7)
 game.setDialogFrame(img`
     8888.....88....888....88.88....888....888...8888
