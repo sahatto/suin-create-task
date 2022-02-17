@@ -1,3 +1,4 @@
+// This function displays all of the information for the continent of Asia when it is chosen by user input including an array of colors available and outputs displayed for each combination of Asia and each color
 function asia (list: any[]) {
     game.showLongText("Enter the color flower you want to see!", DialogLayout.Full)
     game.showLongText("Red, Orange, Yellow, Green, Blue, or Purple", DialogLayout.Full)
@@ -23,10 +24,12 @@ function asia (list: any[]) {
     } else if (color == colorList[5]) {
         game.splash("Magnolia")
     } else {
+        // This "else" option appears when the user misspells a color choice and the game restarts
         game.showLongText("Please enter a valid color... try again", DialogLayout.Full)
         game.reset()
     }
 }
+// This function displays all of the information for the North America continent when it is chosen by user input including the array of colors and a flower output that results from each color input in combination with the input of North America 
 function northAmerica (list: any[]) {
     game.showLongText("Enter the color flower you want to see!", DialogLayout.Full)
     game.showLongText("Red, Orange, Yellow, Green, Blue, or Purple", DialogLayout.Full)
@@ -52,10 +55,12 @@ function northAmerica (list: any[]) {
     } else if (color == colorList[5]) {
         game.splash("Eastern Purple Cornflower")
     } else {
+        // This "else" option appears when the user misspells a color choice and the game restarts
         game.showLongText("Please enter a valid color... try again", DialogLayout.Full)
         game.reset()
     }
 }
+// This function displays all of the information for the Australian continent when it is chosen by user input including the array of colors and a flower output that results from each color input in combination with the input of Australia
 function australia (list: any[]) {
     game.showLongText("Enter the color flower you want to see!", DialogLayout.Full)
     game.showLongText("Red, Orange, Yellow, Green, Blue, or Purple", DialogLayout.Full)
@@ -81,10 +86,12 @@ function australia (list: any[]) {
     } else if (color == colorList[5]) {
         game.splash("Sturt's Nightshade")
     } else {
+        // This "else" option appears when the user misspells a color choice and the game restarts
         game.showLongText("Please enter a valid color... try again", DialogLayout.Full)
         game.reset()
     }
 }
+// This function displays all of the information for the European continent when it is chosen by user input including the array of colors and a flower output that results from each color input in combination with the input of Europe
 function europe (list: any[]) {
     game.showLongText("Enter the color flower you want to see!", DialogLayout.Full)
     game.showLongText("Red, Orange, Yellow, Green, Blue, or Purple", DialogLayout.Full)
@@ -110,10 +117,12 @@ function europe (list: any[]) {
     } else if (color == colorList[5]) {
         game.splash("Iris")
     } else {
+        // This "else" option appears when the user misspells a color choice and the game restarts
         game.showLongText("Please enter a valid color... try again", DialogLayout.Full)
         game.reset()
     }
 }
+// This function displays all of the information for the South American continent when it is chosen by user input including the array of colors and a flower output that results from each color input in combination with the input of South America
 function southAmerica (list: any[]) {
     game.showLongText("Enter the color flower you want to see!", DialogLayout.Full)
     game.showLongText("Red, Orange, Yellow, Green, Blue, or Purple", DialogLayout.Full)
@@ -139,10 +148,12 @@ function southAmerica (list: any[]) {
     } else if (color == colorList[5]) {
         game.splash("Jarcadana")
     } else {
+        // This "else" option appears when the user misspells a color choice and the game restarts
         game.showLongText("Please enter a valid color... try again", DialogLayout.Full)
         game.reset()
     }
 }
+// This function displays all of the information for the African continent when it is chosen by user input including the array of colors and a flower output that results from each color input in combination with the input of Africa
 function africa (list: any[]) {
     game.showLongText("Enter the color flower you want to see!", DialogLayout.Full)
     game.showLongText("Red, Orange, Yellow, Green, Blue, or Purple", DialogLayout.Full)
@@ -168,11 +179,12 @@ function africa (list: any[]) {
     } else if (color == colorList[5]) {
         game.splash("African Violet")
     } else {
+        // This "else" option appears when the user misspells a color choice and the game restarts
         game.showLongText("Please enter a valid color... try again", DialogLayout.Full)
         game.reset()
     }
 }
-// this function takes the user to the next step and shows them the choices and asks them for a number
+// this function takes the user to the next step and shows them the choices for the continents available and asks the user to input a string of which continent choice they want 
 function continentChoice (list: any[]) {
     game.setDialogFrame(img`
         8888.....88....888....88.88....888....888...8888
@@ -247,10 +259,12 @@ function continentChoice (list: any[]) {
     } else if (choice == continentList[5]) {
         europe(list)
     } else {
+        // This "else" option appears when the user misspells a continent choice and the game restarts
         game.showLongText("Please enter a valid continent... try again", DialogLayout.Full)
         game.reset()
     }
 }
+// The code within the OnStart set the background color, the appearance of the game, and welcomes users to the game
 let continentList: string[] = []
 let choice = ""
 let colorList: string[] = []
@@ -312,6 +326,7 @@ game.setDialogTextColor(1)
 game.showLongText("Hello! We are here to teach you about flowers from around the world! ", DialogLayout.Full)
 // This long text is part two of the first text explaining what the game will be
 game.showLongText("Please enter the name of the continent you want to learn about:", DialogLayout.Full)
+// This loop repeats the code 36 times, which allows for every combination of continent and color to appear. After all 36 combinations have appeared, the game starts over 
 for (let index = 0; index < 36; index++) {
     continentChoice(list)
     // This text intros the user and tells them what the game will include
